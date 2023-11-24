@@ -6,6 +6,8 @@ int main() {
     cin >> n;
     
     while(1){
+        if(n == 1) break;
+        
         if(n % 2 == 0){
             n /= 2;
         }
@@ -13,7 +15,6 @@ int main() {
             n = n * 3 + 1;
         }
         cnt++;
-        if(n == 1) break;
     }
     cout << cnt;
     // 여기에 코드를 작성해주세요.
