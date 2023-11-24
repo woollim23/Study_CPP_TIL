@@ -5,7 +5,8 @@ int main() {
     int a, cnt = 0;
 
     for(int i = 0; i < 10; i++){
-        if((i % 2) != 0){
+        cin >> a;
+        if((a % 2) != 0){
             cnt++;
         }
     }
