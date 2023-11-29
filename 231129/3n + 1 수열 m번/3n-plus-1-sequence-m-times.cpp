@@ -18,7 +18,7 @@ int main() {
 
             cnt++;
         }
-        cout << cnt;
+        cout << cnt << endl;
     }
 
     // 여기에 코드를 작성해주세요.
