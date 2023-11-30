@@ -36,7 +36,7 @@ int main() {
         }
     }
 
-    if(check) cout << "Yes";
+    if((check) && (j == n2)) cout << "Yes";
     else cout << "No";
     // 여기에 코드를 작성해주세요.
     return 0;
