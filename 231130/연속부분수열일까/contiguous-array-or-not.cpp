@@ -28,7 +28,7 @@ int main() {
         else if((A[i] != B[j]) && (j > 0))
         {
             check = false;
-            break;
+            j = 0;
         }
         else
         {
