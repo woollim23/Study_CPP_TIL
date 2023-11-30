@@ -28,7 +28,11 @@ int main() {
             int idx = 0;
             for(int j = 0; j < n; j++)
             {
-                if(arr[j] == a) idx = j+1;
+                if(arr[j] == a)
+                {
+                    idx = j+1;
+                    break;
+                }
             }
             cout << idx;
         }
