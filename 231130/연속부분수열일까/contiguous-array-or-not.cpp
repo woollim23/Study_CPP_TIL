@@ -25,6 +25,11 @@ int main() {
             check = true;
             if(j == n2) break;
         }
+        else if((A[i] != B[j]) && (j > 0))
+        {
+            check = false;
+            break;
+        }
         else
         {
             check = false;
