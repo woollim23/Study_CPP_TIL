@@ -13,11 +13,10 @@ int main() {
         if(s[i] == s[i+1]) res++;
         else
         {
-            if(res < 10) sum += 2;
-            else if(res > 9) sum += 3;
+            if(res > 999) sum += 5;
             else if(res > 99) sum += 4;
-            else if(res > 999) sum += 5;
-            else sum += 6;
+            else if(res > 9) sum += 3;
+            else sum += 2;
 
             res = 1;
         }
