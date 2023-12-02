@@ -4,16 +4,26 @@ using namespace std;
 
 int main() {
     string s;
-    int cnt = 1, res = 0;
+    int cnt = 1, res = 1, sum = 0;
 
     cin >> s;
 
     for(int i = 0; i < s.length(); i++)
     {
-        if(s[i] != s[i+1]) res++;
+        if(s[i] == s[i+1]) res++;
+        else
+        {
+            if(res < 10) sum += 2;
+            else if(res > 9) sum += 3;
+            else if(res > 99) sum += 4;
+            else if(res > 999) sum += 5;
+            else sum += 6;
+
+            res = 1;
+        }
     }
 
-    cout << res * 2 << endl;
+    cout << sum << endl;
 
     for(int i = 0; i < s.length(); i++)
     {
