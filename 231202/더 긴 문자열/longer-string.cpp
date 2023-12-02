@@ -11,7 +11,7 @@ int main() {
     n1 = s1.length();
     n2 = s2.length();
 
-    if(s1 == s2) cout << "same";
+    if(n1 == n2) cout << "same";
     else if(n1 > n2) cout << s1 << " " << n1;
     else cout << s2 << " " << n2;
     // 여기에 코드를 작성해주세요.
