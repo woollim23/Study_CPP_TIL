@@ -12,7 +12,7 @@ int main() {
         
         if(n == 0)
         {
-            A = A.substr(n+1);
+            A = A.substr(B.length());
         }
         else
         {
