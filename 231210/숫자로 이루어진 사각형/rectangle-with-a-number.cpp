@@ -9,9 +9,9 @@ void print(int n)
         for(int j = 0; j < n; j++)
         {
             cout << cnt++ << " ";
+            if(cnt >= 10) cnt = 1;
         }
         cout << endl;
-        if(cnt >= 10) cnt = 1;
     }
 }
 
