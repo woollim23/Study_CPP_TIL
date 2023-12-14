@@ -3,12 +3,13 @@ using namespace std;
 
 bool test2(int n)
 {
+    bool ch = false;
     while(n > 0)
     {
-        if(n % 10 == 3 || n % 10 == 6 || n % 10 == 9) return true;
+        if(n % 10 == 3 || n % 10 == 6 || n % 10 == 9) ch = true;
         n /= 10;
     }
-    return false;
+    return ch;
 }
 
 bool test1(int n)
