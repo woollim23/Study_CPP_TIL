@@ -16,7 +16,7 @@ int main() {
 
     for(int i = a; i <= b; i++)
     {
-        if(test(i)) sum += i;
+        if(test(i) && i != 1) sum += i;
     }
 
     cout << sum;
