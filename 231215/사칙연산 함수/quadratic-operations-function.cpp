@@ -33,7 +33,11 @@ int main() {
     char c;
     cin >> a >> c >> b;
 
-    cout << a << " " << c << " " << b << " = " << Calcul(a, b, c);
+    if(c == '+' || c == '-' || c == '/' || c == '*')
+    {
+        cout << a << " " << c << " " << b << " = " << Calcul(a, b, c);
+    }
+    else cout << "False";
     // 여기에 코드를 작성해주세요.
     return 0;
 }
