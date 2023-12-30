@@ -3,8 +3,7 @@ using namespace std;
 
 int Test(int i, int n, int arr[])
 {
-    if(i == n) return arr[i-1];
-
+    if(i == n || n == 1 || n == 2) return arr[n-1];
     arr[i] = (arr[i-1] * arr[i-2]) % 100;
     return Test(i+1, n, arr);
 }
