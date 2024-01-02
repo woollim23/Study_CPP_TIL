@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <functional>
-#include <string>
 using namespace std;
 
 int main() {
@@ -12,6 +11,7 @@ int main() {
     for(int i = 1; i <= n; i++)
     {
         cin >> arr[i];
+        sort(arr + 1, arr + i);
         if(i % 2 != 0)
         {
             cout << arr[i/2 + 1] << " ";
