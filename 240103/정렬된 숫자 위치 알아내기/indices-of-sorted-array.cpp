@@ -26,7 +26,7 @@ bool cmp(Test a, Test b)
 {
     if(a.num == b.num)
     {
-        return a.first < a.first;
+        return a.first < b.first;
     }
     return a.num < b.num;
 }
