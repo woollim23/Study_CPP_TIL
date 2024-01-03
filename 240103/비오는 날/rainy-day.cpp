@@ -81,9 +81,18 @@ int main() {
         cout << 0 << test[idx].m;
     }
     else
-        cout << test[idx].m ;
+        cout << test[idx].m;
+
+    cout << "-";
+    
+    if(test[idx].d < 10)
+    {
+        cout << 0 << test[idx].d;
+    }
+    else
+        cout << test[idx].d;
      
-    cout << "-" << test[idx].d << " " << test[idx].day << " " << test[idx].weather;
+    cout << " " << test[idx].day << " " << test[idx].weather;
     
     return 0;
 }
