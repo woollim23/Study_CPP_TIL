@@ -10,9 +10,9 @@ int main() {
 
     while(1)
     {
+        sum++;
         if(a == a2 && b == b2)
             break;
-        sum++;
         
         if(b <= month[a])
         {
