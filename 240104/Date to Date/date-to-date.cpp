@@ -13,12 +13,8 @@ int main() {
         sum++;
         if(a == a2 && b == b2)
             break;
-        
-        if(b <= month[a])
-        {
-            b++;
-        }
-        else
+        b++;
+        if(b > month[a])
         {
             b = 1;
             a++;
