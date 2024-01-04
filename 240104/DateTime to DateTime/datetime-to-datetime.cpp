@@ -8,6 +8,12 @@ int main() {
 
     int sum = 0;
 
+    if((a2 < 11) || ((a2 == 11) && (b2 < 11) || ((b2 == 11) && (c2 < 11))))
+    {
+        cout << -1;
+    }
+    else
+    {
     while(1)
     {
         if(a == a2 && b == b2 && c == c2)
@@ -27,8 +33,8 @@ int main() {
         }
 
     }
-
     cout << sum;
+    }
     // 여기에 코드를 작성해주세요.
     return 0;
 }
