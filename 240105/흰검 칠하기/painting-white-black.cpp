@@ -18,12 +18,13 @@ int main() {
 
         if(c == 'L')
         {
-            for(int j = (idx-1); j >= (idx-x); j--)
+            for(int j = idx; j > (idx-x); j--)
             {
                 white[j]++;
                 paper[j] = 1;
             }
             idx -= x;
+            idx++;
         }
         else if(c == 'R')
         {
@@ -33,6 +34,7 @@ int main() {
                 paper[j] = 2;
             }
             idx += x;
+            idx--;
         }
     }
 
