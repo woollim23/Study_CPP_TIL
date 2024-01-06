@@ -12,7 +12,8 @@ int main() {
     {
         int x, y;
         cin >> x >> y;
-
+        x += OFFSET;
+        y += OFFSET;
         for(int i = (x+1); i <= (x+8); i++)
         {
             for(int j = (y+1); j <= (y+8); j++)
