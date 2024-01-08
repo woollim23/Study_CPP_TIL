@@ -37,6 +37,7 @@ int main() {
         }
     }
 
+    bool check = false;
     int min_x = 2000, max_x = 0;
     int min_y = 2000, max_y = 0;
     for(int i = 0; i <= MAX; i++)
@@ -45,6 +46,7 @@ int main() {
         {
             if(arr[i][j] == 1)
             {
+                check = true;
                 if(i < min_x) min_x = i;
                 else if(i > max_x) max_x = i;
                 if(j < min_y) min_y = j;
@@ -53,7 +55,10 @@ int main() {
         }
     }
 
-    cout << (max_x - min_x) * (max_y - min_y);
+    if(check)
+        cout << (max_x - min_x) * (max_y - min_y);
+    else
+        cout << 0;
     // 여기에 코드를 작성해주세요.
     return 0;
 }
