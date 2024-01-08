@@ -31,7 +31,7 @@ int main() {
 
     for(int i = x2_1; i < x2_2; i++)
     {
-        for(int j = y2_1; j <= y2_2; j++)
+        for(int j = y2_1; j < y2_2; j++)
         {
             arr[i][j] = 0;
         }
