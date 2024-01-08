@@ -13,7 +13,6 @@ int main() {
         cin >> arr[i];
     }
 
-    sort(arr, arr + n);
     for(int i = 0; i < n; i++)
     {
         if(i == 0 || arr[i-1] != arr[i])
@@ -25,7 +24,7 @@ int main() {
         if(cnt > max) max = cnt;
     }
 
-    cout << max-1;
+    cout << max;
     // 여기에 코드를 작성해주세요.
     return 0;
 }
