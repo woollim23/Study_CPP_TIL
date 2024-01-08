@@ -21,15 +21,15 @@ int main() {
     x2_2 += OFFSET;
     y2_2 += OFFSET;
 
-    for(int i = x1_1; i <= x1_2; i++)
+    for(int i = x1_1; i < x1_2; i++)
     {
-        for(int j = y1_1; j <= y1_2; j++)
+        for(int j = y1_1; j < y1_2; j++)
         {
             arr[i][j] = 1;
         }
     }
 
-    for(int i = x2_1; i <= x2_2; i++)
+    for(int i = x2_1; i < x2_2; i++)
     {
         for(int j = y2_1; j <= y2_2; j++)
         {
@@ -48,15 +48,15 @@ int main() {
             {
                 check = true;
                 if(i < min_x) min_x = i;
-                else if(i > max_x) max_x = i;
+                if(i > max_x) max_x = i;
                 if(j < min_y) min_y = j;
-                else if(j > max_y) max_y = j;
+                if(j > max_y) max_y = j;
             }
         }
     }
 
     if(check)
-        cout << (max_x - min_x) * (max_y - min_y);
+        cout << (max_x + 1 - min_x) * (max_y + 1 - min_y);
     else
         cout << 0;
     // 여기에 코드를 작성해주세요.
