@@ -1,10 +1,10 @@
 #include <iostream>
-#define MAX 1000
+#define MAX 1000000
 using namespace std;
 
 int main() {
-    int a[MAX] = {0,};
-    int b[MAX] = {0,};
+    int a[MAX + 1] = {0,};
+    int b[MAX + 1] = {0,};
     int n, m, t, a_s = 1, b_s = 1;
     char d;
     cin >> n >> m;
