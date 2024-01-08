@@ -23,7 +23,7 @@ int main() {
         else
             cnt++;
 
-        if(cnt > max)
+        if(cnt >= max)
         {
             check = true;
             max = cnt;
