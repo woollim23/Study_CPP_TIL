@@ -35,12 +35,17 @@ int main() {
             {
                 if((infect[j] > 1) || (infect[hand[i][j]] > 1))// 악수하는 사람들중 전염가능한 사람이 있으면
                 {
-                    if((infect[j] > 1) && (infect[hand[i][j]] == 0))
+                    if((infect[hand[i][j]] > 1) && (infect[j] > 1))
+                    {
+                        infect[j]--;
+                        infect[hand[i][j]]--;
+                    }
+                    else if((infect[j] > 1) && (infect[hand[i][j]] == 0))
                     {
                         infect[hand[i][j]] = K + 1;
                         infect[j]--;
                     }
-                    if((infect[hand[i][j]] > 1) && ((infect[j] == 0)))
+                    else if((infect[hand[i][j]] > 1) && ((infect[j] == 0)))
                     {
                         infect[j] = K + 1;
                         infect[hand[i][j]]--;
