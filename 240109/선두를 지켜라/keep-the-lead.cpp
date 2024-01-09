@@ -34,12 +34,16 @@ int main() {
     cout << endl;
 *///디버그코드      
     int cnt = 0;
-    for(int i = 1; i <= time_a; i++)
+    for(int i = 2; i <= time_a; i++)
     {
         if((a[i-1] <= b[i-1]) && (a[i] > b[i]))
+        {
             cnt++;
+        }
         if((a[i-1] > b[i-1]) && (a[i] <= b[i]))
+        {
             cnt++;
+        }
     }
     cout << cnt;
     return 0;
