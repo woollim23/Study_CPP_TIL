@@ -40,7 +40,7 @@ int main() {
         {
             cnt++;
         }
-        if((a[i-1] > b[i-1]) && (a[i] <= b[i]))
+        else if((a[i-1] > b[i-1]) && (a[i] <= b[i]))
         {
             cnt++;
         }
