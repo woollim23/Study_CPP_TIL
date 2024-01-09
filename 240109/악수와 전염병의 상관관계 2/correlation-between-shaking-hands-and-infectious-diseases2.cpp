@@ -33,21 +33,29 @@ int main() {
         {
             if(hand[i][j] != 0)//악수 기록이 있으면 전염 확인
             {
-                if((infect[j] > 1) || (infect[hand[i][j]] > 1))// 악수하는 사람들중 전염가능한 사람이 있으면
+                if((infect[j] >= 1) || (infect[hand[i][j]] >= 1))// 악수하는 사람들중 전염가능한 사람이 있으면
                 {
-                    if((infect[hand[i][j]] > 1) && (infect[j] > 1))
+                    if((infect[hand[i][j]] > 1) && (infect[j] > 1))// 둘다 감염자
                     {
                         infect[j]--;
                         infect[hand[i][j]]--;
                     }
-                    else if((infect[j] > 1) && (infect[hand[i][j]] == 0))
+                    else if((infect[j] > 1) && (infect[hand[i][j]] == 0))// 왼쪽만 감염자
                     {
                         infect[hand[i][j]] = K + 1;
                         infect[j]--;
                     }
-                    else if((infect[hand[i][j]] > 1) && ((infect[j] == 0)))
+                    else if((infect[hand[i][j]] > 1) && ((infect[j] == 0)))// 오른쪽만 감염자
                     {
                         infect[j] = K + 1;
+                        infect[hand[i][j]]--;
+                    }
+                    else if((infect[j] > 1) && (infect[hand[i][j]] == 1))// 왼쪽은 전염횟수 다 떨어진 감염자
+                    {
+                        infect[j]--;
+                    }
+                    else if((infect[hand[i][j]] > 1) && ((infect[j] == 1)))// 오른쪽은 전염횟수 다 떨어진 감염자
+                    {
                         infect[hand[i][j]]--;
                     }
                 }
