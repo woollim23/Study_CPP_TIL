@@ -24,12 +24,20 @@ int main() {
             b[j] = b[j-1] + v;
         time_b += t;
     }
-    
+
+/*
+    for(int i = 0; i <= time_a; i++)
+        cout << a[i] << " ";
+    cout << endl;
+    for(int i = 0; i <= time_b; i++)
+        cout << b[i] << " ";
+    cout << endl;
+*///디버그코드      
     int cnt = 0;
     for(int i = 1; i <= time_a; i++)
     {
         if((a[i-1] <= b[i-1]) && (a[i] > b[i])) cnt++;
-        if((a[i-1] > b[i-1]) && (a[i] <= b[i])) cnt++;
+        if((a[i-1] > b[i-1]) && (a[i] < b[i])) cnt++;
     }
     cout << cnt;
     return 0;
