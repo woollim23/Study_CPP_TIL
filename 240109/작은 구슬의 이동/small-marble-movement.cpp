@@ -45,7 +45,6 @@ int main() {
             if(dr < 2) dr += 2;
             else dr -= 2;
         }
-        cout << r << " " << c << endl;
     }
     
     cout << r << " " << c << endl;
