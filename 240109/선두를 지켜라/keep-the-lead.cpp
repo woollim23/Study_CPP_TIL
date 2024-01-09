@@ -16,8 +16,6 @@ int main() {
         time_a += t;
     }
 
-    cout << endl;
-
     int time_b = 0; // b의 총 시간
     for(int i = 0; i < m; i++)
     {
@@ -26,7 +24,7 @@ int main() {
             b[j] = b[j-1] + v;
         time_b += t;
     }
-     
+    
     int cnt = 0;
     for(int i = 1; i <= time_a; i++)
     {
