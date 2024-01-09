@@ -17,7 +17,7 @@ int Direct(char d)
     return dr;
 }
 bool InRange(int x, int y, int n) {
-    return (0 < x && x < n && 0 < y && y < n);
+    return (0 < x && x <= n && 0 < y && y <= n);
 }
 
 int main() {
@@ -45,6 +45,7 @@ int main() {
             if(dr < 2) dr += 2;
             else dr -= 2;
         }
+        cout << r << " " << c << endl;
     }
     
     cout << r << " " << c << endl;
