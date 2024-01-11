@@ -25,21 +25,14 @@ int main() {
         int cnt = 0;
 
         if(InRange(r + dx[0], c + dy[0]) && arr[r + dx[0]][c + dy[0]] == 1)// 오른쪽
-        {
             cnt++;
-        }
         if(InRange(r + dx[1], c + dy[1]) && arr[r + dx[1]][c + dy[1]] == 1)// 아래
-        {
             cnt++;
-        }
         if(InRange(r + dx[2], c + dy[2]) && arr[r + dx[2]][c + dy[2]] == 1)// 왼쪽
-        {
             cnt++;
-        }
         if(InRange(r + dx[3], c + dy[3]) && arr[r + dx[3]][c + dy[3]] == 1)// 위
-        {
             cnt++;
-        }
+        
         if(cnt == 3) cout << 1 << endl;
         else cout << 0 << endl;
     }
