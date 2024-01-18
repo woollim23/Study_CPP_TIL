@@ -23,7 +23,7 @@ bool Check(int r, int c)
             cnt++;
     }
 
-    return (cnt >= 3);
+    return (cnt == 3);
 }
 
 int main()
