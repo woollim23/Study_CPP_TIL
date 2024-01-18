@@ -6,7 +6,7 @@ int arr[MAX + 1][MAX + 1] = {};
 
 bool InRange(int x, int y)
 {
-    return (0 < x && x <= MAX  && 0 < y && y <= MAX);
+    return (0 <= x && x < MAX  && 0 <= y && y < MAX);
 }
 
 bool Check(int r, int c)
@@ -31,12 +31,12 @@ int main()
     int n, m;
     cin >> n >> m;
 
-    while(m--)
+    for(int i = 0; i < m; i++)
     {
         int r, c;
         cin >> r >> c;
-        r++;
-        c++;
+        r--;
+        c--;
         arr[r][c] = 1;
 
         // 왼쪽, 위쪽, 오른쪽, 아래쪽 방향 배열의 값 확인
