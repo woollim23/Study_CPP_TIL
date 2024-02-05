@@ -7,13 +7,10 @@ public:
     char code;
     int score;
 
-    Test()
-    : code('c')
-    , score(10)
-{
-    this->code = code;
-    this->score = score;
-}
+    Test(char code = 'c', int score = 0)
+    : code(code)
+    , score(score)
+    {}
 };
 
 
