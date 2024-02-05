@@ -7,13 +7,16 @@ public:
     char code;
     int score;
 
-    Test(char code, int score)
-    {
-        this->code = code;
-        this->score = score;
-    }
-    Test(){}
+    Test()
+    : code()
+    , score()
+{
+    this->code = code;
+    this->score = score;
+}
 };
+
+
 
 int main()
 {
