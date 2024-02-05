@@ -22,7 +22,7 @@ Test test[MAX];
 
 int main() {
     int n, max = 0;
-    string max_name = "noname";
+    string max_name = "nonamenonamenoname";
     cin >> n;
 
     for(int i = 0; i < n; i++)
