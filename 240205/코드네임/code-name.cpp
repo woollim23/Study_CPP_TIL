@@ -8,8 +8,8 @@ public:
     int score;
 
     Test()
-    : code()
-    , score()
+    : code('c')
+    , score(10)
 {
     this->code = code;
     this->score = score;
