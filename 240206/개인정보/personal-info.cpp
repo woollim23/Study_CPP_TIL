@@ -36,6 +36,9 @@ int main() {
         cin >> test[i].name >> test[i].height >> test[i].weight;
     }
 
+    cout << fixed;
+    cout.precision(1);
+
     sort(test, test + 5, cmp_n);
     cout << "name" << endl;
     for(int i = 0; i < 5; i++)
