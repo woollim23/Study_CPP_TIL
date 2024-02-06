@@ -15,6 +15,8 @@ public :
 
 bool cmp(Test t1, Test t2)
 {
+    if(t1.data == t2.data)
+        return t1.i < t2.i;
     return t1.data < t2.data;
 }
 
