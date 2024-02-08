@@ -13,7 +13,7 @@ int main() {
     if(Test(n))
         cout << "Yes";
     else
-        cout << "NO";
+        cout << "No";
     // 여기에 코드를 작성해주세요.
     return 0;
 }
