@@ -3,7 +3,7 @@ using namespace std;
 
 int Test(int n)
 {
-    return (((n % 10) + (n / 10)) % 5) == 0;
+    return ((((n % 10) + (n / 10)) % 5) == 0) && (n % 2 == 0);
 }
 
 int main() {
