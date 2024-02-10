@@ -3,12 +3,11 @@ using namespace std;
 
 bool Test(int n)
 {
+    if(n <= 3) return true;
     for(int i = 2; i < n; i++)
     {
         if(n % i == 0) return false;
     }
-    if(n == 1 || n == 2)
-        return false;
     return true;
 }
 
@@ -18,7 +17,10 @@ int main() {
     
     for(int i = a; i <= b; i++)
     {
-        if(Test(i)) sum += i;
+        if(Test(i))
+        {
+            sum += i;
+        }
     }
 
     cout << sum;
