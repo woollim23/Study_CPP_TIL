@@ -34,7 +34,7 @@ bool Test(int y, int m, int d)
         }
         else
         {
-            if(d <= 30 && d >= 1)
+            if(d <= 28 && d >= 1)
                 return true;
         }
     }
