@@ -1,26 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int Test(int n, int cnt)
+int Test(int n)
 {
     if(n == 1)
-        return cnt;
-
-    cnt++;
+        return 0;
 
     if(n % 2 == 0)
-        n /= 2;
+        return Test(n / 2) + 1;
     else
-        n = n * 3 + 1;
-
-    return Test(n, cnt);
+        return Test(n * 3 + 1) + 1;
 }
 
 int main() {
-    int n, cnt = 0;
+    int n;
     cin >> n;
 
-    cout << Test(n, cnt);
+    cout << Test(n);
     // 여기에 코드를 작성해주세요.
     return 0;
 }
