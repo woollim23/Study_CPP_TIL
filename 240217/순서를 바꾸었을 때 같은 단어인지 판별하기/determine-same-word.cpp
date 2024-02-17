@@ -12,18 +12,17 @@ int main() {
     sort(s2.begin(), s2.end());
 
     bool check = true;
-    int length;
 
-    if(s1.length() > s2.length())
-        length = s1.length();
-    else
-        length = s2.length();
-
-    for(int i = 0; i < length; i++)
+    if(s1.length() == s2.length())
     {
-        if(s1[i] != s2[i])
-            check = false;
+        for(int i = 0; i < s1.length(); i++)
+        {
+            if(s1[i] != s2[i])
+                check = false;
+        }
     }
+    else
+        check = false;
 
     if(check)
         cout << "Yes";
